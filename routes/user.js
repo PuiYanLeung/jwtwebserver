@@ -21,7 +21,7 @@ const login = async(req, res, next) => {
             }else if (!user){
                 res.status(401).json({msg: "User not found"});
             }else{
-                const fn = async(error) => error ? next(error): res.status(200).json({user, token: jwt.sign({user: {id: user.id, name: user.name}})});
+                const fn = async(error) => error ? next(error): res.status(200).json({user, token: jwt.sign({user: {id: user.id, name: user.name}}, process.env.SECRET_KEY)});
                 req.login(user, session, fn);
             }
         }catch (error){
