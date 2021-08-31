@@ -60,7 +60,7 @@ const registerStrategy = new LocalStrategy({usernameField: 'name', passwordField
 
 const loginStrategy = new LocalStrategy(login);
 
-modeule.exports = {
+module.exports = {
     registerStrategy,
     verifyStrategy,
     loginStrategy
