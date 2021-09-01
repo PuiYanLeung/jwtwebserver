@@ -56,6 +56,7 @@ const verifyStrategy = new JWTStrategy({
     jwtFromRequest: ExtractJWT.fromUrlQueryParameter("secret_token")
 }, verify);
 
+//const registerStrategy = new LocalStrategy({usernameField: 'name', passwordField: 'password'}, register);
 const registerStrategy = new LocalStrategy({usernameField: 'name', passwordField: 'password'}, register);
 
 const loginStrategy = new LocalStrategy(login);
