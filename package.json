@@ -1,7 +1,6 @@
 {
   "name": "jwtwebserver",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,5 +18,14 @@
     "passport-jwt": "^4.0.0",
     "passport-local": "^1.0.0",
     "sequelize": "^6.6.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PuiYanLeung/jwtwebserver.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PuiYanLeung/jwtwebserver/issues"
+  },
+  "homepage": "https://github.com/PuiYanLeung/jwtwebserver#readme",
+  "description": ""
 }

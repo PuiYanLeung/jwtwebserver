@@ -22,6 +22,6 @@ app.use("*", errorRouter); // Use error router here
 
 app.listen(process.env.HTTP_PORT || 5000, async()=>{
     connection.authenticate();
-    await User.sync({alter: true}); //This creates/updates table s
+    await User.sync({alter: true}); // This creates/updates tables
     console.log("HTTP Server Started");
 })
